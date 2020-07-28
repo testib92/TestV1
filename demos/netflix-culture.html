@@ -167,8 +167,6 @@
                        
                         
 
-                       
-                        
                             <label for="Numero">Téléphone (facultatif)</label>
                             <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
                         
@@ -193,24 +191,29 @@
            
             
             <!-- début du test -->
-                       <div class="col-md-6 col-sm-6">
+                       <div>
                          
-                              <label for="name">Nom et Prénom</label>
-                            <input id="name" name="name"  required placeholder="Aires Jérémy" />
-                        </fieldset>
+                              <label for="Date">Date de formation</label>
+                            <input type="date" name="Date" id="start" name="trip-start"
+                                   value=""
+                                   min="2020-01-01" max="2020-12-31">
                         
-                        <fieldset>
-                            <label for="email">Votre adresse Mail</label>
-                            <input id="email" name="email" type="email" value=""
-                                   required placeholder="Nom.prénom@gmail.com"/>
-                        </fieldset>
-                        
-
+                         
+                             <label for="Stage">Intitulé de la formation</label>
+                                                  <input id="Stage" name="Stage" placeholder="Azure AZ 900" />
+                            <span id="Stage" class="selectivity-input"></span>
                        
-                        <fieldset>
-                            <label for="Numero">Téléphone (facultatif)</label>
-                            <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
-                        </fieldset>
+                    </div>   
+                    <div id="show_formation_software_installed" style="display: none;">
+                        <div>
+                           
+                                <label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
+                                <select name="formation_software_installed" id="formation_software_installed">
+                                    <option value="non">non</option>
+                                    <option value="oui">oui</option>
+                                </select>
+                           
+                        </div>
                         
           </div>
           
