@@ -76,8 +76,134 @@
     <meta name="twitter:image" content="../static/images/share-webslides.jpg">
 
     <!-- EDIT -->
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- SCRIPTS ajout pour test -->
 
-    <!-- FAVICONS -->
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+<script>
+    // Si tu veux ne pas affiché la ligne "Disposez-vous de..." il faut que tu mette software: null
+    var items = [
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B206-16 - Excel 2016 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-13 - Excel 2013 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-10 - Excel 2010 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B210 - Excel - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-19 - Excel 2019 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-16 - Excel 2016 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-13 - Excel 2013 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-10 - Excel 2010 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B301 - Word - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-19 - Word 2019 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-16 - Word 2016 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-13 - Word 2013 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-10 - Word 2010 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B302 - Word - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-19 - Word 2019 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-16 - Word 2016 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-13 - Word 2013 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-10 - Word 2010 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B501 - PowerPoint - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-19 - PowerPoint 2019 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-16 - PowerPoint 2016 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-13 - PowerPoint 2013 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-10 - PowerPoint 2010 - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B401 - Access - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-19 - Access 2019 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-16 - Access 2016 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-13 - Access 2013 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-10 - Access 2010 - Conception d\'une base de données', software: 'Access'},
+{text: 'AZ900', software: null},
+    ];
+
+    var stageSelector = $('#Stage');
+    stageSelector.selectivity({
+        allowClear: true,
+        items: items.map(function (item) {
+            return item.text;
+        }),
+        placeholder: 'Azure AZ 900'
+    });
+    stageSelector.on('change', function () {
+        $('#show_formation_software_installed').css('display', 'none');
+        var value = stageSelector.selectivity('value');
+        var item = items.find(function (element) {
+            return element.text === value
+        });
+        if (item && item.software) {
+            $('#show_formation_software_installed').css('display', '');
+            $('#title_formation_software_installed').text(item.software);
+        }
+    })
+</script>
+
+ <script src="./js/adapter-latest.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/audio.js"></script>
+    <script type="text/javascript">
+      function toggleTest() {
+        var but = document.getElementById("button");
+        var vid = document.getElementById("gum-video");
+        var aud = document.getElementById("gum-audio");
+
+        if (but.innerHTML == "Cliquez ici pour démarrer le test video / audio") {
+          but.innerHTML = "Stop Test";
+          vid.play();
+          aud.play();
+        } else {
+          but.innerHTML = "Cliquez ici pour démarrer le test video / audio";
+          vid.pause();
+          aud.pause();
+        }
+      }
+    </script>
+    <script>
+
+        </table>
+
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("help-button");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
+    
+    
+
+    <!-- Fin ajout script pour test -->
     <link rel="shortcut icon" sizes="16x16" href="../static/images/favicons/favicon.png">
     <link rel="shortcut icon" sizes="32x32" href="../static/images/favicons/favicon-32.png">
     <link rel="apple-touch-icon icon" sizes="76x76" href="../static/images/favicons/favicon-76.png">
@@ -92,30 +218,7 @@
   </head>
 
   <body>
-<!--    <header role="banner">
-     <nav role="navigation">
-        <p class="logo"><a href="../index.html" title="WebSlides">WebSlides</a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>WebSlides</em>
-            </a>
-          </li>
-          <li class="twitter">
-            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
-              <svg class="fa-twitter">
-                <use xlink:href="#fa-twitter"></use>
-              </svg>
-              <em>@WebSlides</em>
-            </a>
-          </li>
-            <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li>
-    </ul>
-      </nav>
-    </header>-->
+
 
     <main role="main">
       <article id="webslides">
@@ -131,14 +234,11 @@
           <!--.wrap = container (width: 90%) -->
           <div class="wrap aligncenter">
             <h1>
-              <strong>Netflix's Culture</strong>
+              <strong>Test Distanciel</strong>
             </h1>
-            <p class="text-symbols">* * * </p>
-            <p><a class="button ghost" href="https://webslides.tv/webslides-latest.zip" title="Download WebSlides for free">
-              <svg class="fa-cloud-download">
-                <use xlink:href="#fa-cloud-download"></use>
-              </svg> WebSlides</a>
-            </p>
+            <br>
+            <p class="text-symbols">* Vous voici sur la page de test distanciel, pour vous déplacer vous pouvez utilisé votre souris ou encore les flèches * </p>
+        
           </div>
           <!-- .end .wrap -->
         </section>
@@ -323,8 +423,7 @@
                                             <label for="Video">Avez-vous une Webcam </label>
                                             <input id="Video" name="Video" placeholder="Oui / Non" />
                                           </fieldset>
-                                                  
-                                                  <TD width=10%>&nbsp;</TD>
+                                                 
                                                   
                                                </TD>
                                                   
@@ -339,7 +438,7 @@
                                     <input id="Son" name="Son" required placeholder="Oui / Non" />
                                 </fieldset> 
                                             </TD> 
-                                               <TD width=10%>&nbsp;</TD>
+                                             
                                           </tr>
                                          
                   </table>
@@ -391,80 +490,10 @@
         <div class="container">
             <div class="row">
               
-                   <!-- <div class="col-md-12 col-sm-12">
-                        <fieldset>
-                             <label for="Stage">Intitulé de la formation</label>
-                                                  <input id="Stage" name="Stage" placeholder="Azure AZ 900" />
-                            <span id="Stage" class="selectivity-input"></span>
-                        </fieldset>
-                    </div>   
-                    <div id="show_formation_software_installed" style="display: none;">
-                        <div class="col-md-12 col-sm-12">
-                            <fieldset>
-                                <label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
-                                <select name="formation_software_installed" id="formation_software_installed">
-                                    <option value="non">non</option>
-                                    <option value="oui">oui</option>
-                                </select>
-                            </fieldset>
-                        </div>
-                    </div> -->
+                
                   
-                     <!--  <div class="col-md-6 col-sm-6">
-                         <table>
-                              <label for="name">Nom et Prénom</label>
-                            <input id="name" name="name"  required placeholder="Aires Jérémy" />
-                        </fieldset>
-                         </tr>
-                         <tr>
-                        <fieldset>
-                            <label for="email">Votre adresse Mail</label>
-                            <input id="email" name="email" type="email" value=""
-                                   required placeholder="Nom.prénom@gmail.com"/>
-                        </fieldset>
-                         </tr>
-
-                        <tr>  
-                        <fieldset>
-                            <label for="Numero">Téléphone (facultatif)</label>
-                            <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
-                        </fieldset>
-                         </tr>
-                         <tr>
-                        <fieldset>
-                            <label for="Date">Date de formation</label>
-                            <input type="date" name="Date" id="start" name="trip-start"
-                                   value=""
-                                   min="2020-01-01" max="2020-12-31">
-                        </fieldset>
-                         </tr>  -->               
-                         </table>
-                    </div>
-
+                 
      
-              <!--      <div class="col-md-6 col-sm-6">
-                        <table class="t2">
-
-
-                            <tr>
-                                <fieldset class="pure-group">
-                                    <td><label for="Download">Download</label></td>
-                                    <td><label for="Upload">Upload</label></td>
-                                    <td><label for="Ping">Ping</label></td>
-                                    <iframe style="border:none;position:center;width="560" height="315";overflow:auto;" src="//openspeedtest.com/Get-widget.php?Auto=10"></iframe></div>
-                               </fieldset>
-                          </tr>
-                           <tr>
-                        <fieldset class="pure-group">
-                            <td><input id="Download" name="Download"  required placeholder="? Mbps" /></td>
-                            <td><input id="Upload" name="Upload"  required placeholder="? Mbps" /></td>
-                            <td><input id="Ping" name="Ping" placeholder="? Ms" /></td>
-                        </fieldset>
-                          </tr>
-
-                    </table>
-
-                </div>
              
                       <!-- LE TEST CAMERA COMMENCE ICI 
              <div id="container" class="col-md-12 col-sm-12">
