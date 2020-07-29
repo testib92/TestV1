@@ -199,28 +199,7 @@
 												</div>
 											</section>
 											<!-- Fin de test.end .wrap -->
-											<!-- Début test 3 de test.end .wrap -->
-											<section>
-												<div class="wrap size-50 bg-white">
-													<h2>
-														<svg class="fa-info-circle large">
-															<use xlink:href="#fa-info-circle"></use>
-														</svg>
-														<strong>Avez vous des questions</strong>
-													</h2>
-													<hr>
-													<!-- début du test -->
-													<div>
-														<br>
-														<!-- 
-														<label for="message">Avez-vous des questions </label>
-														<br>
-														 -->
-														<textarea id="message" name="message" rows="6" cols="60" placeholder="Avez-vous des questions ?" style="margin: 3.25px 34.8px 3.25px 0px; width: 477px; height: 113px;"></textarea>
-														<button class="button-success pure-button button-xlarge"><i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
-													</div>
-												</section>
-												<!-- Fin de test.end .wrap -->
+											
 												
 												
 												
@@ -403,103 +382,69 @@
                         </tr>
                      </table>
                 </div>
-           </form> 
-     </div> 
-</div> 
-     </div>
-    </div>
+          
+
+<!-- SCRIPTS METTRE A LA SUITE LA  -->
 
 
-<!-- Footer Section -->
 
-<footer>
-     <div class="container">
-          <div class="row">
-
-               <div class="col-md-3 col-sm-3">
-                    <img src="images/logo.png" class="img-responsive">
-                    <!--<i class="fa fa-magnet"></i>-->
-               </div>
-
-               <div class="col-md-4 col-sm-4">
-                    <p>1 place de la pyramide, PUTEAUX</p>
-               </div>
-
-                <div class="col-md-5 col-sm-5">
-                     <p>Ib Formation | <font size=0.2rem ><em>by Aires Ribeiro Jérémy</em></font></p>
-                    </div>
-
-
-          </div>
-     </div>
-</footer>
-
-
-<!-- SCRIPTS -->
+<section>
+										<div class="wrap size-50 bg-white">
+											<h2>
+												<svg class="fa-info-circle large">
+													<use xlink:href="#fa-info-circle"></use>
+												</svg>
+												<strong>Présentation</strong>
+											</h2>
+											<hr>
+											<!-- début du test -->
+											<div>
+												<label for="name">Nom et Prénom</label>
+												<input id="name" name="name"  required placeholder="Aires Jérémy" />
+												<label for="email">Votre adresse Mail</label>
+												<input id="email" name="email" type="email" value=""required placeholder="Nom.prénom@gmail.com"/>
+												<label for="Numero">Téléphone (facultatif)</label>
+												<input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
+											</div>
+											<!-- Fin de test.end .wrap -->
+										</section>
+										<!-- Début test 2  de test.end .wrap -->
+										<section>
+											<div class="wrap size-50 bg-white">
+												<h2>
+													<svg class="fa-info-circle large">
+														<use xlink:href="#fa-info-circle"></use>
+													</svg>
+													<strong>Formation</strong>
+												</h2>
+												<hr>
+												<!-- début du test -->
+												<div>
+													<label for="Date">Date de formation</label>
+													<input type="date" name="Date" id="start" name="trip-start"value=""min="2020-01-01" max="2020-12-31">
+													<label for="Stage">Intitulé de la formation</label>
+													<input id="Stage" name="Stage" placeholder="Azure AZ 900" />
+													<span id="Stage" class="selectivity-input"></span>
+												</div>
+												<div id="show_formation_software_installed" style="display: none;">
+													<div>
+														<label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
+														<select name="formation_software_installed" id="formation_software_installed">
+															<option value="non">non</option>
+															<option value="oui">oui</option>
+														</select>
+													</div>
+												</div>
+											</section>
+											<!-- Fin de test.end .wrap -->
+											
+												
 
 <script data-cfasync="false" src="form-submission-handler.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
-<script>
-    // Si tu veux ne pas affiché la ligne "Disposez-vous de..." il faut que tu mette software: null
-    var items = [
-{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
-{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
-{text: 'B206-16 - Excel 2016 - Initiation macro-commandes', software: 'Excel'},
-{text: 'B206-13 - Excel 2013 - Initiation macro-commandes', software: 'Excel'},
-{text: 'B206-10 - Excel 2010 - Initiation macro-commandes', software: 'Excel'},
-{text: 'B210 - Excel - Consolidation des compétences pour autodidactes', software: 'Excel'},
-{text: 'B210-19 - Excel 2019 - Consolidation des compétences pour autodidactes', software: 'Excel'},
-{text: 'B210-16 - Excel 2016 - Consolidation des compétences pour autodidactes', software: 'Excel'},
-{text: 'B210-13 - Excel 2013 - Consolidation des compétences pour autodidactes', software: 'Excel'},
-{text: 'B210-10 - Excel 2010 - Consolidation des compétences pour autodidactes', software: 'Excel'},
-{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
-{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
-{text: 'B301 - Word - Les bases : création et mise en page de documents', software: 'Word'},
-{text: 'B301-19 - Word 2019 - Les bases : création et mise en page de documents', software: 'Word'},
-{text: 'B301-16 - Word 2016 - Les bases : création et mise en page de documents', software: 'Word'},
-{text: 'B301-13 - Word 2013 - Les bases : création et mise en page de documents', software: 'Word'},
-{text: 'B301-10 - Word 2010 - Les bases : création et mise en page de documents', software: 'Word'},
-{text: 'B302 - Word - Fonctions avancées : documents longs et publipostages', software: 'Word'},
-{text: 'B302-19 - Word 2019 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
-{text: 'B302-16 - Word 2016 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
-{text: 'B302-13 - Word 2013 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
-{text: 'B302-10 - Word 2010 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
-{text: 'B501 - PowerPoint - Création de présentations enrichies et interactives', software: 'Powerpoint'},
-{text: 'B501-19 - PowerPoint 2019 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
-{text: 'B501-16 - PowerPoint 2016 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
-{text: 'B501-13 - PowerPoint 2013 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
-{text: 'B501-10 - PowerPoint 2010 - Création de présentations enrichies et interactives', software: 'Powerpoint'},
-{text: 'B401 - Access - Conception d\'une base de données', software: 'Access'},
-{text: 'B401-19 - Access 2019 - Conception d\'une base de données', software: 'Access'},
-{text: 'B401-16 - Access 2016 - Conception d\'une base de données', software: 'Access'},
-{text: 'B401-13 - Access 2013 - Conception d\'une base de données', software: 'Access'},
-{text: 'B401-10 - Access 2010 - Conception d\'une base de données', software: 'Access'},
-{text: 'AZ900', software: null},
-    ];
-
-    var stageSelector = $('#Stage');
-    stageSelector.selectivity({
-        allowClear: true,
-        items: items.map(function (item) {
-            return item.text;
-        }),
-        placeholder: 'Azure AZ 900'
-    });
-    stageSelector.on('change', function () {
-        $('#show_formation_software_installed').css('display', 'none');
-        var value = stageSelector.selectivity('value');
-        var item = items.find(function (element) {
-            return element.text === value
-        });
-        if (item && item.software) {
-            $('#show_formation_software_installed').css('display', '');
-            $('#title_formation_software_installed').text(item.software);
-        }
-    })
-</script>
 
  <script src="./js/adapter-latest.js"></script>
     <script src="./js/video.js"></script>
@@ -632,85 +577,8 @@
 												</div>
 												<!-- .end .wrap -->
 											</section>
-											<section>
-												<!--.wrap = container (width: 90%) -->
-												<div class="wrap size-50">
-													<h2><strong>Présentation </strong> Nom et Prénom</h2>
-													<hr>
-													<!-- TEST IVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV -->
-													<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"  action="https://script.google.com/macros/s/AKfycbwnrSqRIxsL5VvUGe09Od9JOt1h4wtawb000lg_/exec">
-														<!-- Contact Section -->
-														<section id="contact">
-															<div class="thankyou_message" style="display:none;">
-																<h2><em id="result"></em></h2>
-															</div>
-															<div id="body-content">
-																<div class="container">
-																	<div class="row">
-																		<!-- SCRIPTS -->
-																		<script data-cfasync="false" src="form-submission-handler.js"></script>
-																		<script src="js/jquery.js"></script>
-																		<script src="js/bootstrap.min.js"></script>
-																		<script src="js/custom.js"></script>
-																		<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
-																		<script src="./js/adapter-latest.js"></script>
-																		<script src="./js/video.js"></script>
-																		<script src="./js/audio.js"></script>
-																		<script type="text/javascript">
-																			function toggleTest() {
-																				var but = document.getElementById("button");
-																				var vid = document.getElementById("gum-video");
-																				var aud = document.getElementById("gum-audio");
-																				if (but.innerHTML == "Cliquez ici pour démarrer le test video / audio") {
-																					but.innerHTML = "Stop Test";
-																					vid.play();
-																					aud.play();
-																				}
-																				 else {
-																					but.innerHTML = "Cliquez ici pour démarrer le test video / audio";
-																					vid.pause();
-																					aud.pause();
-																				}
-																			}
-																		</script>
-																		<script>
-																			</table>// Get the modal;
-																			var modal = document.getElementById('myModal');
-																			// Get the button that opens the modal
-																			ar btn = document.getElementById("help-button");
-																			// Get the <span> element that closes the modal
-																			ar span = document.getElementsByClassName("close")[0];
-																			// When the user clicks the button, open the modal
-																			tn.onclick = function() {
-																				modal.style.display = "block";
-																			}
-																			// When the user clicks on <span> (x), close the modal
-																			pan.onclick = function() {
-																				modal.style.display = "none";
-																			}
-																			// When the user clicks anywhere outside of the modal, close it
-																			indow.onclick = function(event) {
-																				if (event.target == modal) {
-																					modal.style.display = "none";
-																				}
-																			}
-																		</script>
-																	</div>
-																	<ol class="text-cols">
-																		<li>Judgment</li>
-																		<li>Communication</li>
-																		<li>Impact</li>
-																		<li>Curiosity</li>
-																		<li>Innovation</li>
-																		<li>Courage</li>
-																		<li>Passion</li>
-																		<li>Honesty</li>
-																		<li>Selflessness</li>
-																	</ol>
-																	<!--TBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB -->
-																</section>
-																
-																
+											
+															
 																<section class="bg-black">
 																	<span class="background" style="background-image:url('https://source.unsplash.com/26qZsuRwm0c/1600x800')"></span>
 																	<div class="wrap aligncenter">
@@ -795,7 +663,7 @@
 																		<!-- .end .wrap -->
 																	</section>
 																	
-		</section>
+	
 																</article>
 															</main>
 															<!--main-->
@@ -816,5 +684,14 @@
 															<!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
 															<!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
 															<script defer src="../static/js/svg-icons.js"></script>
+															
+															 </form> 
+     </div> 
+</div> 
+     </div>
+    </div>
+   </div>
+															
+															
 														</body>
 													</html>
