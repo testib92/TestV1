@@ -268,47 +268,12 @@
                         </fieldset>
                          </tr>
 
-                        <tr>  
-                        <fieldset>
-                            <label for="Numero">Téléphone (facultatif)</label>
-                            <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
-                        </fieldset>
-                         </tr>
-                         <tr>
-                        <fieldset>
-                            <label for="Date">Date de formation</label>
-                            <input type="date" name="Date" id="start" name="trip-start"
-                                   value=""
-                                   min="2020-01-01" max="2020-12-31">
-                        </fieldset>
-                         </tr>                 
+                                  
                          </table>
                     </div>
 
      
-                    <div class="col-md-6 col-sm-6">
-                        <table class="t2"> <!-- IC-->
-
-
-                            <tr>
-                                <fieldset class="pure-group">
-                                    <td><label for="Download">Download</label></td>
-                                    <td><label for="Upload">Upload</label></td>
-                                    <td><label for="Ping">Ping</label></td>
-                                    <iframe style="border:none;position:center;width="560" height="315";overflow:auto;" src="//openspeedtest.com/Get-widget.php?Auto=10"></iframe>
-                               </fieldset>
-                          </tr>
-                           <tr>
-                        <fieldset class="pure-group">
-                            <td><input id="Download" name="Download"   placeholder="? Mbps" /></td>
-                            <td><input id="Upload" name="Upload"   placeholder="? Mbps" /></td>
-                            <td><input id="Ping" name="Ping" placeholder="? Ms" /></td>
-                        </fieldset>
-                          </tr>
-
-                    </table>
-
-                </div>
+                   
              
                       <!-- LE TEST CAMERA COMMENCE ICI -->
              <div id="container" class="col-md-12 col-sm-12">
@@ -385,60 +350,6 @@
           
 
 <!-- SCRIPTS METTRE A LA SUITE LA  -->
-
-
-
-<section>
-										<div class="wrap size-50 bg-white">
-											<h2>
-												<svg class="fa-info-circle large">
-													<use xlink:href="#fa-info-circle"></use>
-												</svg>
-												<strong>Présentation</strong>
-											</h2>
-											<hr>
-											<!-- début du test -->
-											<div>
-												<label for="name">Nom et Prénom</label>
-												<input id="name" name="name"  required placeholder="Aires Jérémy" />
-												<label for="email">Votre adresse Mail</label>
-												<input id="email" name="email" type="email" value=""required placeholder="Nom.prénom@gmail.com"/>
-												<label for="Numero">Téléphone (facultatif)</label>
-												<input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
-											</div>
-											<!-- Fin de test.end .wrap -->
-										</section>
-										<!-- Début test 2  de test.end .wrap -->
-										<section>
-											<div class="wrap size-50 bg-white">
-												<h2>
-													<svg class="fa-info-circle large">
-														<use xlink:href="#fa-info-circle"></use>
-													</svg>
-													<strong>Formation</strong>
-												</h2>
-												<hr>
-												<!-- début du test -->
-												<div>
-													<label for="Date">Date de formation</label>
-													<input type="date" name="Date" id="start" name="trip-start"value=""min="2020-01-01" max="2020-12-31">
-													<label for="Stage">Intitulé de la formation</label>
-													<input id="Stage" name="Stage" placeholder="Azure AZ 900" />
-													<span id="Stage" class="selectivity-input"></span>
-												</div>
-												<div id="show_formation_software_installed" style="display: none;">
-													<div>
-														<label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
-														<select name="formation_software_installed" id="formation_software_installed">
-															<option value="non">non</option>
-															<option value="oui">oui</option>
-														</select>
-													</div>
-												</div>
-											</section>
-											<!-- Fin de test.end .wrap -->
-											
-												
 
 <script data-cfasync="false" src="form-submission-handler.js"></script>
 <script src="js/jquery.js"></script>
