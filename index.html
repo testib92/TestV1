@@ -1,68 +1,32 @@
-<!doctype html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-    <!-- CLEAN MARKUP = GOOD KARMA.
-      Hi source code lover,
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <meta name="description" content="Test webcam and microphone on your browser">
 
-      you're a curious person and a fast learner ;)
-      Let's make something beautiful together. Contribute on Github:
-      https://github.com/webslides/webslides
+<title>Tests Distanciel</title>
 
-      Thanks,
-      @jlantunez.
-    -->
-
-    <!-- SEO -->
-    <title>WebSlides: Making HTML presentations easy</title>
-    <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
-
-    <!-- URL CANONICAL -->
-    <!-- <link rel="canonical" href="http://your-url.com/"> -->
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
-
-    <!-- CSS WebSlides -->
-    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
-
-    <!-- Optional - CSS SVG Icons (Font Awesome) -->
-    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
-
-    <!-- SOCIAL CARDS (ADD YOUR INFO) -->
-
-    <!-- FACEBOOK -->
-    <meta property="og:url" content="http://your-url.com/"> <!-- YOUR URL -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
-    <meta property="og:description" content="WebSlides is about telling stories beautifully. Just the essential features. Good karma."> <!-- EDIT -->
-    <meta property="og:updated_time" content="2017-01-04T17:20:50"> <!-- EDIT -->
-    <meta property="og:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
-
-    <!-- TWITTER -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@webslides"> <!-- EDIT -->
-    <meta name="twitter:creator" content="@jlantunez"> <!-- EDIT -->
-    <meta name="twitter:title" content="WebSlides — Making HTML Presentations Easy"> <!-- EDIT -->
-    <meta name="twitter:description" content="WebSlides is about good karma. Just essential features. 120+ free slides ready to use."> <!-- EDIT -->
-    <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
-
-    <!-- FAVICONS -->
-    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
-    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
-    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
-    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
-    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
-    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
-
-    <!-- Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#333333">
-
-  </head>
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="./css/reading.css">
+     <link rel="stylesheet" href="./css/webcam.css">
+     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+     <link href="js/selectivity-3.1.0/selectivity-jquery.min.css" rel="stylesheet" />
+     <link rel="stylesheet" href="css/style.css">
+     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+	 
+	     <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="../css/svg-icons.css">
+	
+	
+	
   <body>
     <header role="banner">
       <nav role="navigation">
@@ -87,88 +51,97 @@
           <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
         </ul>
       </nav>
-    </header>
+   
 
-    <main role="main">
-      <article id="webslides" class="vertical">
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
+</head>
 
-        <section>
-         <span class="background" style="background-image:url('https://webslides.tv/static/images/nature.jpg')"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap aligncenter">
-            <h1><strong>Create beautiful stories</strong></h1>
-            <p class="text-intro">WebSlides makes HTML presentations easy.<br>
-              Just the essentials and using lovely CSS.
-            </p>
-            <p>
-              <a href="https://webslides.tv/webslides-latest.zip" class="button zoomIn" title="Download WebSlides for free">
-                <svg class="fa-cloud-download">
-                  <use xlink:href="#fa-cloud-download"></use>
-                </svg>
-                WebSlides
-              </a>
-            </p>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   <!-- <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>-->
+               </button> 
+               <img src="images/logo.png" class="img-responsive">
+        </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <br>  <li class="active"><a href="index.html"><font size="+3"><em>Ib formation</em></font></a></li>
+               </ul>
           </div>
-          <!-- .end .wrap -->
-        </section>
-        <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50 aligncenter">
-            <h2><strong>Why WebSlides?</strong></h2>
-            <p class="text-intro"><a href="demos/why-webslides.html" title="Why WebSlides?">Presentations</a>, <a href="demos/landings.html" title="Landings">landings</a>, <a href="demos/portfolios.html" title="Portfolios">portfolios</a>, and <a href="demos/longforms.html" title="Longforms">longforms</a>.</p>
-            <div class="bg-white shadow">
-              <ul class="flexblock reasons">
-                <li>
-                  <h2>An opportunity to engage.</h2>
-                  <p>WebSlides is about good karma. This is about telling the story, and sharing it in a beautiful way. HTML and CSS as narrative elements.</p>
-                </li>
-                <li>
-                  <h2>Work better, faster.</h2>
-                  <p>Designers, marketers, and journalists can now focus on the content. Simply <a href="demos/index.html" title="WebSlides Demos">choose a demo</a> and customize it in minutes.</p>
-                </li>
-              </ul>
-            </div>
-            <!-- .end .bg-white shadow -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <h3><strong>WebSlides is really easy</strong></h3>
-                <p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide. </p>
-                <p>Code is clean and scalable. It uses <strong>intuitive markup</strong> with popular naming conventions. There's no need to overuse classes or nesting. <strong>Making an HTML presentation has never been so fast</strong>.</p>
-              </div>
-              <!-- .end .column -->
-              <div class="column">
-                <pre>&lt;article id="webslides"&gt;
-  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
-  &lt;section&gt;
-    &lt;h1&gt;Design for trust&lt;/h1&gt;
-  &lt;/section&gt;
-  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
-  &lt;section class="bg-primary"&gt;
-    &lt;div class="wrap"&gt;
-      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</pre>
-              </div>
-              <!-- .end .column -->
-            </div>
-            <!-- .end .grid -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section>
+
+  </div>
+</div>
+
+       <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbwnrSqRIxsL5VvUGe09Od9JOt1h4wtawb000lg_/exec">
+
+
+<!-- Contact Section -->
+
+<section id="contact">
+
+
+          <div class="wrap size-50 bg-white">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>Formation</strong>
+            </h2>
+            <hr>
+			
+			
+			
+    <div class="thankyou_message" style="display:none;">
+        <h2><em id="result"></em></h2>
+    </div>
+
+    <div id="body-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-1 col-md-10 col-sm-12">
+                   
+                    <div class="col-md-12 col-sm-12">
+                        <fieldset>
+                             <label for="Stage">Intitulé de la formation</label>
+                            <!--                      <input id="Stage" name="Stage" placeholder="Azure AZ 900" />-->
+                            <span id="Stage" class="selectivity-input"></span>
+                        </fieldset>
+                    </div>
+                    <div id="show_formation_software_installed" style="display: none;">
+                        <div class="col-md-12 col-sm-12">
+                            <fieldset>
+                                <label for="formation_software_installed">Disposez-vous de <span id="title_formation_software_installed"></span> sur votre poste ?</label>
+                                <select name="formation_software_installed" id="formation_software_installed">
+                                    <option value="non">non</option>
+                                    <option value="oui">oui</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                    </div>
+					
+					
+					</section>
+					
+					
+						 <!-- .end .ASPPPPUUUUUUUUUUUUUUUUUUUUUUUUUUwrap -->
+					
+					
+					  <section>
           <div class="wrap">
             <h2>Features</h2>
             <ul class="flexblock features">
@@ -235,157 +208,343 @@
             </ul>
           </div>
         </section>
-        <section>
-          <div class="wrap">
-            <h2><strong>WebSlides Demos</strong></h2>
-            <p>Contribute on <a href="https://github.com/webslides/webslides" title="Contribute on Github">Github</a>. <span class="alignright"><a href="demos/index.html" title="WebSlides Demos">View all &rsaquo;</a></span></p>
-            <ul class="flexblock gallery">
-              <li>
-                <a href="demos/why-webslides.html" title="Why WebSlides?">
-                  <figure>
-                    <img alt="Thumbnail Why WebSlides?" src="https://webslides.tv/static/images/demos-why.png">
-                    <figcaption>
-                      <h2>Why WebSlides?</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/landings.html" title="Landings">
-                  <figure>
-                    <img alt="Thumbnail Landings" src="https://webslides.tv/static/images/demos-landings.png">
-                    <figcaption>
-                      <h2>Landings</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/portfolios.html" title="Portfolios">
-                  <figure>
-                    <img alt="Thumbnail Portfolios" src="https://webslides.tv/static/images/demos-portfolios.png">
-                    <figcaption>
-                      <h2>Portfolios</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/keynote.html" title="Apple Keynote">
-                  <figure>
-                    <img alt="Thumbnail Apple Keynote" src="https://webslides.tv/static/images/demos-apple.png">
-                    <figcaption>
-                      <h2>Apple Keynote</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section>
+		
+		
+		<section>
+          <!--.wrap = container (width: 90%) -->
           <div class="wrap">
             <div class="grid vertical-align">
               <div class="column">
-                <h4>
-                  <svg class="fa-life-ring">
-                    <use xlink:href="#fa-life-ring"></use>
-                  </svg>
-                  <strong>Guides</strong>
-                </h4>
-                <p>If you need help, here's just three tutorials. Just a basic knowledge of HTML is required:</p>
-                <ul class="description">
-                  <li><a href="demos/components.html" title="WebSlides Components">WebSlides Components</a>.</li>
-                  <li><a href="demos/classes.html" title="WebSlides Classes">WebSlides Classes</a>.</li>
-                  <li><a href="demos/media.html" title="WebSlides Media">WebSlides Media: images, videos...</a></li>
-                </ul>
+                <h3><strong>WebSlides is really easy</strong></h3>
+                <p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide. </p>
+                <p>Code is clean and scalable. It uses <strong>intuitive markup</strong> with popular naming conventions. There's no need to overuse classes or nesting. <strong>Making an HTML presentation has never been so fast</strong>.</p>
               </div>
+              <!-- .end .column -->
               <div class="column">
-                <figure><img class="aligncenter" src="static/images/setup.png" alt="WebSlides Files"></figure>
+                <pre>&lt;article id="webslides"&gt;
+  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
+  &lt;section&gt;
+    &lt;h1&gt;Design for trust&lt;/h1&gt;
+  &lt;/section&gt;
+  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
+  &lt;section class="bg-primary"&gt;
+    &lt;div class="wrap"&gt;
+      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</pre>
               </div>
-              <div class="column">
-                <h4>
-                  <svg class="fa-cubes">
-                    <use xlink:href="#fa-cubes"></use>
-                  </svg>
-                  <strong>Built to expand</strong>
-                </h4>
-                <p>The best way to <strong>inspire with your content</strong> is to connect on a personal level:</p>
-                <ul class="description">
-                  <li>Background images: <a href="http://unsplash.com">Unsplash</a>.</li>
-                  <li>CSS animations: <a href="https://daneden.github.io/animate.css/">Animate.css</a>.</li>
-                  <li>Longforms: <a href="http://michalsnik.github.io/aos/"> Animate on scroll</a>.</li>
-                </ul>
-              </div>
+              <!-- .end .column -->
             </div>
-            <!--end .grid -->
-          </div>
-        </section>
-        <section class="aligncenter">
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap">
-            <h2><strong>Ready to Start?</strong> </h2>
-            <p class="text-intro">Create your own presentation instantly. <br>120+ premium slides ready to use.</p>
-            <p>
-              <a href="https://webslides.tv/webslides-latest.zip" class="button" title="Download WebSlides">
-                <svg class="fa-cloud-download">
-                  <use xlink:href="#fa-cloud-download"></use>
-                </svg>
-                Free Download
-              </a>
-              <span class="try">
-                <a href="https://www.paypal.me/jlantunez/8" title="Thanks :)">
-                  <svg class="fa-paypal">
-                    <use xlink:href="#fa-paypal"></use>
-                  </svg>
-                  Pay what you want.
-                </a>
-              </span>
-            </p>
+            <!-- .end .grid -->
           </div>
           <!-- .end .wrap -->
         </section>
-        <section class="slide-bottom">
-          <div class="wrap">
-            <div class="content-right text-serif">
-              <h2>
-                <strong>Thanks.</strong>
-                <a target="_blank" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=Finally,%20everything%20you%20need%20to%20make%20HTML%20presentations%20in%20a%20fast/beautiful%20way.%20@WebSlides%20=%20Good%20karma%20&mdash;%20https://webslides.tv">
-                  <svg class="fa-twitter">
-                    <use xlink:href="#fa-twitter"></use>
-                  </svg>
-                </a>
-              </h2>
-              <p>People share content that makes them feel inspired. WebSlides is a very effective way to engage young audiences, customers, and teams.</p> 
-              <p>Best,<br> <a href="https://twitter.com/jlantunez">@jlantunez</a>, <a href="https://twitter.com/belelros">@belelros</a>, and <a href="https://twitter.com/luissacristan">@luissacristan</a>.</p>
-            </div>
-            <!-- .end .content-right -->
+		
+		 <!-- .end .ASPPPPUUUUUUUUUUUUUUUUUUUUUUUUUUwrap -->
+		
+		
+					
+					<section id="contact">
+					
+					    <div class="wrap size-50 bg-white">
+            <h2>
+              <svg class="fa-info-circle large">
+                <use xlink:href="#fa-info-circle"></use>
+              </svg>
+              <strong>Formation 3</strong>
+            </h2>
+            <hr>
+                    
+                       <div class="col-md-6 col-sm-6">
+                         <table>
+                              <label for="name">Nom et Prénom</label>
+                            <input id="name" name="name"  required placeholder="Aires Jérémy" />
+                        </fieldset>
+                         </tr>
+                         <tr>
+                        <fieldset>
+                            <label for="email">Votre adresse Mail</label>
+                            <input id="email" name="email" type="email" value=""
+                                   required placeholder="Nom.prénom@gmail.com"/>
+                        </fieldset>
+                         </tr>
+
+                        <tr>  
+                        <fieldset>
+                            <label for="Numero">Téléphone (facultatif)</label>
+                            <input id="Numero" name="Numero" placeholder="06 .. .. .. .." />
+                        </fieldset>
+                         </tr>
+                         <tr>
+                        <fieldset>
+                            <label for="Date">Date de formation</label>
+                            <input type="date" name="Date" id="start" name="trip-start"
+                                   value=""
+                                   min="2020-01-01" max="2020-12-31">
+                        </fieldset>
+                         </tr>                 
+                         </table>
+                    </div>
+
+     
+                    <div class="col-md-6 col-sm-6">
+                        <table class="t2"> <!-- IC-->
+
+
+                            <tr>
+                                <fieldset class="pure-group">
+                                    <td><label for="Download">Download</label></td>
+                                    <td><label for="Upload">Upload</label></td>
+                                    <td><label for="Ping">Ping</label></td>
+                                    <iframe style="border:none;position:center;width="560" height="315";overflow:auto;" src="//openspeedtest.com/Get-widget.php?Auto=10"></iframe></div>
+                               </fieldset>
+                          </tr>
+                           <tr>
+                        <fieldset class="pure-group">
+                            <td><input id="Download" name="Download"  required placeholder="? Mbps" /></td>
+                            <td><input id="Upload" name="Upload"  required placeholder="? Mbps" /></td>
+                            <td><input id="Ping" name="Ping" placeholder="? Ms" /></td>
+                        </fieldset>
+                          </tr>
+
+                    </table>
+
+                </div>
+             
+                      <!-- LE TEST CAMERA COMMENCE ICI -->
+             <div id="container" class="col-md-12 col-sm-12">
+                  <audio id="gum-audio"></audio>
+                                 <br>
+                                 <br>
+                                   <a id="button" class="btn-learnmore-orange" style="width: 86%; font-size: 200%; font-weight: bold;" onclick="toggleTest()">Cliquez ici pour démarrer le test video / audio</a>
+                                   <p style="font-size: 150%; padding-top: 3%; font-weight: bold; color: orange;" id="errorMsg"></p>
+                                  
+                  
+                  
+                  
+                  
+                                        <table>
+                                       
+                                              
+                                             <tr> 
+                                                  
+                                             <TD>
+                                             <fieldset class="pure-group" width=45%>
+                                            <label for="Video">Avez-vous une Webcam </label>
+                                            <input id="Video" name="Video" placeholder="Oui / Non" />
+                                          </fieldset>
+                                                  
+                                                  <TD width=10%>&nbsp;</TD>
+                                                  
+                                               </TD>
+                                                  
+                                                         <TD rowspan=2> 
+                                                       
+                                                  <video id="gum-video" playsinline style="width: 65%"></video> <!-- CAMERA -->
+                                                       
+                                             </TD> 
+                                             
+                                       </tr>
+                                      
+                                        <tr>
+                                             
+                                            <TD>
+                                            <fieldset class="pure-group" width=45%>
+                                     <label for="Son">Avez-vous un retour Micro </label>
+                                    <input id="Son" name="Son" required placeholder="Oui / Non" />
+                                </fieldset> 
+                                            </TD> 
+                                               <TD width=10%>&nbsp;</TD>
+                                          </tr>
+                                         
+                  </table>
+                                             
+                          
+                                </div>
+                     
+               
+                </div>
+         
+                <div class="col-md-6 col-sm-6">
+                    <br>
+                    <!-- <label for="message">Avez-vous des questions </label><br> -->
+                     <table cellspacing="15">
+                          <tr>             
+                    <fieldset class="pure-group">
+                       
+                         <td> 
+                              <textarea id="message" name="message" rows="6" cols="60" placeholder="Avez-vous des questions ?" style="margin: 3.25px 34.8px 3.25px 0px; width: 477px; height: 113px;"></textarea>
+                         </td>
+                               <td>
+                              <button class="button-success pure-button button-xlarge"> 
+                              <i class="fa fa-paper-plane"></i>&nbsp;Envoyer</button>
+                              </td>
+                     </fieldset>
+                        </tr>
+                     </table>
+                </div>
+           </form> 
+     </div> 
+</div> 
+     </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-3 col-sm-3">
+                    <img src="images/logo.png" class="img-responsive">
+                    <!--<i class="fa fa-magnet"></i>-->
+               </div>
+
+               <div class="col-md-4 col-sm-4">
+                    <p>1 place de la pyramide, PUTEAUX</p>
+               </div>
+
+                <div class="col-md-5 col-sm-5">
+                     <p>Ib Formation | <font size=0.2rem ><em>by Aires Ribeiro Jérémy</em></font></p>
+                    </div>
+
+
           </div>
-          <!-- .end .wrap -->
-        </section>
+     </div>
+</footer>
 
-      </article>
-      <!-- end article -->
-    </main>
-    <!-- end main -->
 
-   <!-- A global footer
+<!-- SCRIPTS -->
 
-     <footer role="contentinfo">
-      <div class="wrap">
-        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
-      </div>
-    </footer>  -->
 
-    <!-- Required -->
-    <script src="static/js/webslides.js"></script>
+
+  <!-- Required -->
+    <script src="../js/webslides.js"></script>
     <script>
       window.ws = new WebSlides();
-    </script>
+    </script> <!-- Autoslide? window.ws = new WebSlides({ autoslide: 8000 }); -->
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="static/js/svg-icons.js"></script>
+    <script defer src="../js/svg-icons.js"></script>
 
-  </body>
+
+<script data-cfasync="false" src="form-submission-handler.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/selectivity-3.1.0/selectivity-jquery.min.js"></script>
+<script>
+    // Si tu veux ne pas affiché la ligne "Disposez-vous de..." il faut que tu mette software: null
+    var items = [
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B206-16 - Excel 2016 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-13 - Excel 2013 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B206-10 - Excel 2010 - Initiation macro-commandes', software: 'Excel'},
+{text: 'B210 - Excel - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-19 - Excel 2019 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-16 - Excel 2016 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-13 - Excel 2013 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B210-10 - Excel 2010 - Consolidation des compétences pour autodidactes', software: 'Excel'},
+{text: 'B240 - Excel VBA - Développement d\'applications', software: 'Excel'},
+{text: 'B241 - Excel VBA - Développement avancé d\'applications', software: 'Excel'},
+{text: 'B301 - Word - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-19 - Word 2019 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-16 - Word 2016 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-13 - Word 2013 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B301-10 - Word 2010 - Les bases : création et mise en page de documents', software: 'Word'},
+{text: 'B302 - Word - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-19 - Word 2019 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-16 - Word 2016 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-13 - Word 2013 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B302-10 - Word 2010 - Fonctions avancées : documents longs et publipostages', software: 'Word'},
+{text: 'B501 - PowerPoint - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-19 - PowerPoint 2019 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-16 - PowerPoint 2016 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-13 - PowerPoint 2013 - Créations de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B501-10 - PowerPoint 2010 - Création de présentations enrichies et interactives', software: 'Powerpoint'},
+{text: 'B401 - Access - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-19 - Access 2019 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-16 - Access 2016 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-13 - Access 2013 - Conception d\'une base de données', software: 'Access'},
+{text: 'B401-10 - Access 2010 - Conception d\'une base de données', software: 'Access'},
+{text: 'AZ900', software: null},
+    ];
+
+    var stageSelector = $('#Stage');
+    stageSelector.selectivity({
+        allowClear: true,
+        items: items.map(function (item) {
+            return item.text;
+        }),
+        placeholder: 'Azure AZ 900'
+    });
+    stageSelector.on('change', function () {
+        $('#show_formation_software_installed').css('display', 'none');
+        var value = stageSelector.selectivity('value');
+        var item = items.find(function (element) {
+            return element.text === value
+        });
+        if (item && item.software) {
+            $('#show_formation_software_installed').css('display', '');
+            $('#title_formation_software_installed').text(item.software);
+        }
+    })
+</script>
+
+ <script src="./js/adapter-latest.js"></script>
+    <script src="./js/video.js"></script>
+    <script src="./js/audio.js"></script>
+    <script type="text/javascript">
+      function toggleTest() {
+        var but = document.getElementById("button");
+        var vid = document.getElementById("gum-video");
+        var aud = document.getElementById("gum-audio");
+
+        if (but.innerHTML == "Cliquez ici pour démarrer le test video / audio") {
+          but.innerHTML = "Stop Test";
+          vid.play();
+          aud.play();
+        } else {
+          but.innerHTML = "Cliquez ici pour démarrer le test video / audio";
+          vid.pause();
+          aud.pause();
+        }
+      }
+    </script>
+    <script>
+
+        </table>
+
+      // Get the modal
+      var modal = document.getElementById('myModal');
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("help-button");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
+
+</body>
 </html>
